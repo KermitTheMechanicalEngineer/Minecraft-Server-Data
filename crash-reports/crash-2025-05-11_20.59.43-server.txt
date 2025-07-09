@@ -1,0 +1,208 @@
+---- Minecraft Crash Report ----
+// Why is it breaking :(
+
+Time: 5/11/25, 8:59 PM
+Description: Ticking block entity
+
+java.lang.NullPointerException: Cannot read field "tank" because "otherMaster" is null
+	at flaxbeard.immersivepetroleum.common.blocks.tileentities.OilTankTileEntity.equalize(OilTankTileEntity.java:212) ~[ImmersivePetroleum-1.18.2-4.2.0-25.jar%2348!/:4.2.0-25] {re:classloading,pl:runtimedistcleaner:A}
+	at flaxbeard.immersivepetroleum.common.blocks.tileentities.OilTankTileEntity.tickServer(OilTankTileEntity.java:174) ~[ImmersivePetroleum-1.18.2-4.2.0-25.jar%2348!/:4.2.0-25] {re:classloading,pl:runtimedistcleaner:A}
+	at flaxbeard.immersivepetroleum.common.blocks.ticking.IPServerTickableTile.lambda$makeTicker$0(IPServerTickableTile.java:13) ~[ImmersivePetroleum-1.18.2-4.2.0-25.jar%2348!/:4.2.0-25] {re:classloading}
+	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.m_142224_(LevelChunk.java:673) ~[server-1.18.2-20220404.173914-srg.jar%2362!/:?] {re:mixin,re:classloading,pl:mixin:APP:canary.mixins.json:world.block_entity_ticking.world_border.BoundTickingBlockEntityMixin,pl:mixin:A}
+	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.m_142224_(LevelChunk.java:766) ~[server-1.18.2-20220404.173914-srg.jar%2362!/:?] {re:mixin,re:classloading,pl:mixin:APP:canary.mixins.json:world.block_entity_ticking.sleeping.RebindableTickingBlockEntityWrapperAccessor,pl:mixin:A}
+	at net.minecraft.world.level.Level.m_46463_(Level.java:476) ~[server-1.18.2-20220404.173914-srg.jar%2362!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:canary.mixins.json:alloc.chunk_random.LevelMixin,pl:mixin:APP:canary.mixins.json:entity.collisions.intersection.LevelMixin,pl:mixin:APP:canary.mixins.json:util.block_entity_retrieval.LevelMixin,pl:mixin:APP:canary.mixins.json:world.block_entity_ticking.sleeping.LevelMixin,pl:mixin:APP:canary.mixins.json:world.chunk_access.LevelMixin,pl:mixin:APP:canary.mixins.json:world.inline_block_access.LevelMixin,pl:mixin:APP:canary.mixins.json:world.inline_height.LevelMixin,pl:mixin:APP:starlight.mixins.json:common.world.LevelMixin,pl:mixin:A}
+	at net.minecraft.server.level.ServerLevel.m_8793_(ServerLevel.java:327) ~[server-1.18.2-20220404.173914-srg.jar%2362!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:forgeendertech:coremod,re:classloading,pl:accesstransformer:B,xf:fml:forgeendertech:coremod,pl:mixin:APP:canary.mixins.json:alloc.chunk_random.ServerLevelMixin,pl:mixin:APP:canary.mixins.json:chunk.replace_streams.ServerLevelMixin,pl:mixin:APP:canary.mixins.json:entity.inactive_navigations.ServerLevelMixin,pl:mixin:APP:canary.mixins.json:profiler.ServerLevelMixin,pl:mixin:APP:canary.mixins.json:util.accessors.ServerLevelAccessor,pl:mixin:APP:canary.mixins.json:world.block_entity_ticking.sleeping.ServerLevelMixin,pl:mixin:APP:immersiveengineering.mixins.json:coremods.ServerWorldMixin,pl:mixin:APP:starlight.mixins.json:common.world.ServerWorldMixin,pl:mixin:APP:modernfix-common.mixins.json:bugfix.chunk_deadlock.ServerLevelMixin,pl:mixin:APP:modernfix-common.mixins.json:perf.cache_strongholds.ServerLevelMixin,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_5703_(MinecraftServer.java:902) ~[server-1.18.2-20220404.173914-srg.jar%2362!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.dedicated.DedicatedServer.m_5703_(DedicatedServer.java:326) ~[server-1.18.2-20220404.173914-srg.jar%2362!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.m_5705_(MinecraftServer.java:842) ~[server-1.18.2-20220404.173914-srg.jar%2362!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:685) ~[server-1.18.2-20220404.173914-srg.jar%2362!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_177918_(MinecraftServer.java:261) ~[server-1.18.2-20220404.173914-srg.jar%2362!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at java.lang.Thread.run(Thread.java:840) [?:?] {re:mixin}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Suspected Mod: 
+	Immersive Petroleum (immersivepetroleum), Version: 4.2.0-25
+		Issue tracker URL: https://github.com/TwistedGate/ImmersivePetroleum/issues
+		at TRANSFORMER/immersivepetroleum@4.2.0-25/flaxbeard.immersivepetroleum.common.blocks.tileentities.OilTankTileEntity.equalize(OilTankTileEntity.java:212)
+Stacktrace:
+	at flaxbeard.immersivepetroleum.common.blocks.tileentities.OilTankTileEntity.equalize(OilTankTileEntity.java:212) ~[ImmersivePetroleum-1.18.2-4.2.0-25.jar%2348!/:4.2.0-25] {re:classloading,pl:runtimedistcleaner:A}
+	at flaxbeard.immersivepetroleum.common.blocks.tileentities.OilTankTileEntity.tickServer(OilTankTileEntity.java:174) ~[ImmersivePetroleum-1.18.2-4.2.0-25.jar%2348!/:4.2.0-25] {re:classloading,pl:runtimedistcleaner:A}
+	at flaxbeard.immersivepetroleum.common.blocks.ticking.IPServerTickableTile.lambda$makeTicker$0(IPServerTickableTile.java:13) ~[ImmersivePetroleum-1.18.2-4.2.0-25.jar%2348!/:4.2.0-25] {re:classloading}
+	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.m_142224_(LevelChunk.java:673) ~[server-1.18.2-20220404.173914-srg.jar%2362!/:?] {re:mixin,re:classloading,pl:mixin:APP:canary.mixins.json:world.block_entity_ticking.world_border.BoundTickingBlockEntityMixin,pl:mixin:A}
+	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.m_142224_(LevelChunk.java:766) ~[server-1.18.2-20220404.173914-srg.jar%2362!/:?] {re:mixin,re:classloading,pl:mixin:APP:canary.mixins.json:world.block_entity_ticking.sleeping.RebindableTickingBlockEntityWrapperAccessor,pl:mixin:A}
+	at net.minecraft.world.level.Level.m_46463_(Level.java:476) ~[server-1.18.2-20220404.173914-srg.jar%2362!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:canary.mixins.json:alloc.chunk_random.LevelMixin,pl:mixin:APP:canary.mixins.json:entity.collisions.intersection.LevelMixin,pl:mixin:APP:canary.mixins.json:util.block_entity_retrieval.LevelMixin,pl:mixin:APP:canary.mixins.json:world.block_entity_ticking.sleeping.LevelMixin,pl:mixin:APP:canary.mixins.json:world.chunk_access.LevelMixin,pl:mixin:APP:canary.mixins.json:world.inline_block_access.LevelMixin,pl:mixin:APP:canary.mixins.json:world.inline_height.LevelMixin,pl:mixin:APP:starlight.mixins.json:common.world.LevelMixin,pl:mixin:A}
+	at net.minecraft.server.level.ServerLevel.m_8793_(ServerLevel.java:327) ~[server-1.18.2-20220404.173914-srg.jar%2362!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:forgeendertech:coremod,re:classloading,pl:accesstransformer:B,xf:fml:forgeendertech:coremod,pl:mixin:APP:canary.mixins.json:alloc.chunk_random.ServerLevelMixin,pl:mixin:APP:canary.mixins.json:chunk.replace_streams.ServerLevelMixin,pl:mixin:APP:canary.mixins.json:entity.inactive_navigations.ServerLevelMixin,pl:mixin:APP:canary.mixins.json:profiler.ServerLevelMixin,pl:mixin:APP:canary.mixins.json:util.accessors.ServerLevelAccessor,pl:mixin:APP:canary.mixins.json:world.block_entity_ticking.sleeping.ServerLevelMixin,pl:mixin:APP:immersiveengineering.mixins.json:coremods.ServerWorldMixin,pl:mixin:APP:starlight.mixins.json:common.world.ServerWorldMixin,pl:mixin:APP:modernfix-common.mixins.json:bugfix.chunk_deadlock.ServerLevelMixin,pl:mixin:APP:modernfix-common.mixins.json:perf.cache_strongholds.ServerLevelMixin,pl:mixin:A}
+-- Block entity being ticked --
+Details:
+	Name: immersivepetroleum:oiltank_master // flaxbeard.immersivepetroleum.common.blocks.tileentities.OilTankTileEntity
+	Block: Block{immersivepetroleum:oiltank}[facing=north,mirrored=true,multiblockslave=false]
+	Block location: World: (-173,63,-149), Section: (at 3,15,11 in -11,3,-10; chunk contains blocks -176,-64,-160 to -161,319,-145), Region: (-1,-1; contains chunks -32,-32 to -1,-1, blocks -512,-64,-512 to -1,319,-1)
+	Block: Block{immersivepetroleum:oiltank}[facing=north,mirrored=true,multiblockslave=false]
+	Block location: World: (-173,63,-149), Section: (at 3,15,11 in -11,3,-10; chunk contains blocks -176,-64,-160 to -161,319,-145), Region: (-1,-1; contains chunks -32,-32 to -1,-1, blocks -512,-64,-512 to -1,319,-1)
+Stacktrace:
+	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.m_142224_(LevelChunk.java:673) ~[server-1.18.2-20220404.173914-srg.jar%2362!/:?] {re:mixin,re:classloading,pl:mixin:APP:canary.mixins.json:world.block_entity_ticking.world_border.BoundTickingBlockEntityMixin,pl:mixin:A}
+	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.m_142224_(LevelChunk.java:766) ~[server-1.18.2-20220404.173914-srg.jar%2362!/:?] {re:mixin,re:classloading,pl:mixin:APP:canary.mixins.json:world.block_entity_ticking.sleeping.RebindableTickingBlockEntityWrapperAccessor,pl:mixin:A}
+	at net.minecraft.world.level.Level.m_46463_(Level.java:476) ~[server-1.18.2-20220404.173914-srg.jar%2362!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:canary.mixins.json:alloc.chunk_random.LevelMixin,pl:mixin:APP:canary.mixins.json:entity.collisions.intersection.LevelMixin,pl:mixin:APP:canary.mixins.json:util.block_entity_retrieval.LevelMixin,pl:mixin:APP:canary.mixins.json:world.block_entity_ticking.sleeping.LevelMixin,pl:mixin:APP:canary.mixins.json:world.chunk_access.LevelMixin,pl:mixin:APP:canary.mixins.json:world.inline_block_access.LevelMixin,pl:mixin:APP:canary.mixins.json:world.inline_height.LevelMixin,pl:mixin:APP:starlight.mixins.json:common.world.LevelMixin,pl:mixin:A}
+	at net.minecraft.server.level.ServerLevel.m_8793_(ServerLevel.java:327) ~[server-1.18.2-20220404.173914-srg.jar%2362!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:forgeendertech:coremod,re:classloading,pl:accesstransformer:B,xf:fml:forgeendertech:coremod,pl:mixin:APP:canary.mixins.json:alloc.chunk_random.ServerLevelMixin,pl:mixin:APP:canary.mixins.json:chunk.replace_streams.ServerLevelMixin,pl:mixin:APP:canary.mixins.json:entity.inactive_navigations.ServerLevelMixin,pl:mixin:APP:canary.mixins.json:profiler.ServerLevelMixin,pl:mixin:APP:canary.mixins.json:util.accessors.ServerLevelAccessor,pl:mixin:APP:canary.mixins.json:world.block_entity_ticking.sleeping.ServerLevelMixin,pl:mixin:APP:immersiveengineering.mixins.json:coremods.ServerWorldMixin,pl:mixin:APP:starlight.mixins.json:common.world.ServerWorldMixin,pl:mixin:APP:modernfix-common.mixins.json:bugfix.chunk_deadlock.ServerLevelMixin,pl:mixin:APP:modernfix-common.mixins.json:perf.cache_strongholds.ServerLevelMixin,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_5703_(MinecraftServer.java:902) ~[server-1.18.2-20220404.173914-srg.jar%2362!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.dedicated.DedicatedServer.m_5703_(DedicatedServer.java:326) ~[server-1.18.2-20220404.173914-srg.jar%2362!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.m_5705_(MinecraftServer.java:842) ~[server-1.18.2-20220404.173914-srg.jar%2362!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:685) ~[server-1.18.2-20220404.173914-srg.jar%2362!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_177918_(MinecraftServer.java:261) ~[server-1.18.2-20220404.173914-srg.jar%2362!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at java.lang.Thread.run(Thread.java:840) [?:?] {re:mixin}
+
+
+-- Affected level --
+Details:
+	All players: 1 total; [ServerPlayer['KermitDeToad'/205, l='ServerLevel[world]', x=-166.83, y=64.00, z=-129.30]]
+	Chunk stats: 2267
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (0,80,0), Section: (at 0,0,0 in 0,5,0; chunk contains blocks 0,-64,0 to 15,319,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
+	Level time: 132082435 game time, 71608796 day time
+	Level name: world
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Level weather: Rain time: 96549 (now: false), thunder time: 27918 (now: false)
+	Known server brands: forge
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.m_5703_(MinecraftServer.java:902) ~[server-1.18.2-20220404.173914-srg.jar%2362!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.dedicated.DedicatedServer.m_5703_(DedicatedServer.java:326) ~[server-1.18.2-20220404.173914-srg.jar%2362!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.m_5705_(MinecraftServer.java:842) ~[server-1.18.2-20220404.173914-srg.jar%2362!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:685) ~[server-1.18.2-20220404.173914-srg.jar%2362!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_177918_(MinecraftServer.java:261) ~[server-1.18.2-20220404.173914-srg.jar%2362!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at java.lang.Thread.run(Thread.java:840) [?:?] {re:mixin}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.18.2
+	Minecraft Version ID: 1.18.2
+	Operating System: Linux (amd64) version 5.15.0-134-generic
+	Java Version: 17.0.14, Ubuntu
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Ubuntu
+	Memory: 4515515824 bytes (4306 MiB) / 7046430720 bytes (6720 MiB) up to 25333596160 bytes (24160 MiB)
+	CPUs: 24
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Xeon(R) CPU E5-2620 v2 @ 2.10GHz
+	Identifier: Intel64 Family 6 Model 62 Stepping 4
+	Microarchitecture: Ivy Bridge (Server)
+	Frequency (GHz): 2.10
+	Number of physical packages: 2
+	Number of physical CPUs: 12
+	Number of logical CPUs: 24
+	Graphics card #0 name: G200eR2
+	Graphics card #0 vendor: Matrox Electronics Systems Ltd. (0x102b)
+	Graphics card #0 VRAM (MB): 16.00
+	Graphics card #0 deviceId: 0x0534
+	Graphics card #0 versionInfo: unknown
+	Memory slot #0 capacity (MB): 8192.00
+	Memory slot #0 clockSpeed (GHz): -0.00
+	Memory slot #0 type: DDR3
+	Memory slot #1 capacity (MB): 4096.00
+	Memory slot #1 clockSpeed (GHz): -0.00
+	Memory slot #1 type: DDR3
+	Memory slot #2 capacity (MB): 8192.00
+	Memory slot #2 clockSpeed (GHz): -0.00
+	Memory slot #2 type: DDR3
+	Memory slot #3 capacity (MB): 4096.00
+	Memory slot #3 clockSpeed (GHz): -0.00
+	Memory slot #3 type: DDR3
+	Memory slot #4 capacity (MB): 4096.00
+	Memory slot #4 clockSpeed (GHz): -0.00
+	Memory slot #4 type: DDR3
+	Memory slot #5 capacity (MB): 8192.00
+	Memory slot #5 clockSpeed (GHz): -0.00
+	Memory slot #5 type: DDR3
+	Memory slot #6 capacity (MB): 4096.00
+	Memory slot #6 clockSpeed (GHz): -0.00
+	Memory slot #6 type: DDR3
+	Memory slot #7 capacity (MB): 8192.00
+	Memory slot #7 clockSpeed (GHz): -0.00
+	Memory slot #7 type: DDR3
+	Memory slot #8 capacity (MB): 8192.00
+	Memory slot #8 clockSpeed (GHz): -0.00
+	Memory slot #8 type: DDR3
+	Memory slot #9 capacity (MB): 4096.00
+	Memory slot #9 clockSpeed (GHz): -0.00
+	Memory slot #9 type: DDR3
+	Memory slot #10 capacity (MB): 8192.00
+	Memory slot #10 clockSpeed (GHz): -0.00
+	Memory slot #10 type: DDR3
+	Memory slot #11 capacity (MB): 4096.00
+	Memory slot #11 clockSpeed (GHz): -0.00
+	Memory slot #11 type: DDR3
+	Memory slot #12 capacity (MB): 4096.00
+	Memory slot #12 clockSpeed (GHz): -0.00
+	Memory slot #12 type: DDR3
+	Memory slot #13 capacity (MB): 8192.00
+	Memory slot #13 clockSpeed (GHz): -0.00
+	Memory slot #13 type: DDR3
+	Memory slot #14 capacity (MB): 4096.00
+	Memory slot #14 clockSpeed (GHz): -0.00
+	Memory slot #14 type: DDR3
+	Memory slot #15 capacity (MB): 8192.00
+	Memory slot #15 clockSpeed (GHz): -0.00
+	Memory slot #15 type: DDR3
+	Virtual memory max (MB): 56501.36
+	Virtual memory used (MB): 9000.55
+	Swap memory total (MB): 8192.00
+	Swap memory used (MB): 0.00
+	JVM Flags: 0 total; 
+	Server Running: true
+	Player Count: 1 / 10; [ServerPlayer['KermitDeToad'/205, l='ServerLevel[world]', x=-166.83, y=64.00, z=-129.30]]
+	Data Packs: vanilla, mod:tconstruct (incompatible), mod:pneumaticcraft, mod:quarryplus, mod:jei (incompatible), mod:ae2 (incompatible), mod:immersivepetroleum (incompatible), mod:forge, mod:noaddrepcost (incompatible), mod:patchouli (incompatible), mod:mantle (incompatible), mod:forgeendertech, mod:adlods, mod:jeimultiblocks, mod:immersiveengineering, mod:zerocore, mod:bigreactors, mod:saturn (incompatible), mod:canary, mod:mixinextras (incompatible), mod:starlight (incompatible), mod:ferritecore (incompatible), mod:modernfix (incompatible)
+	World Generation: Experimental
+	Is Modded: Definitely; Server brand changed to 'forge'
+	Type: Dedicated Server (map_server.txt)
+	ModLauncher: 9.1.3+9.1.3+main.9b69c82a
+	ModLauncher launch target: forgeserver
+	ModLauncher naming: srg
+	ModLauncher services: 
+		 mixin PLUGINSERVICE 
+		 eventbus PLUGINSERVICE 
+		 slf4jfixer PLUGINSERVICE 
+		 object_holder_definalize PLUGINSERVICE 
+		 runtime_enum_extender PLUGINSERVICE 
+		 capability_token_subclass PLUGINSERVICE 
+		 accesstransformer PLUGINSERVICE 
+		 runtimedistcleaner PLUGINSERVICE 
+		 mixin TRANSFORMATIONSERVICE 
+		 fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		kotori_scala@2.13.10-build-12
+		javafml@null
+	Mod List: 
+		server-1.18.2-20220404.173914-srg.jar             |Minecraft                     |minecraft                     |1.18.2              |DONE      |Manifest: NOSIGNATURE
+		TConstruct-1.18.2-3.7.2.167.jar                   |Tinkers' Construct            |tconstruct                    |3.7.2.167           |DONE      |Manifest: NOSIGNATURE
+		saturn-mc1.18.2-0.1.5.jar                         |Saturn                        |saturn                        |0.1.5               |DONE      |Manifest: NOSIGNATURE
+		canary-mc1.18.2-0.3.3.jar                         |Canary                        |canary                        |0.3.3               |DONE      |Manifest: NOSIGNATURE
+		mixinextras-forge-0.3.2.jar                       |MixinExtras                   |mixinextras                   |0.3.2               |DONE      |Manifest: NOSIGNATURE
+		pneumaticcraft-repressurized-1.18.2-3.6.4-45.jar  |PneumaticCraft: Repressurized |pneumaticcraft                |1.18.2-3.6.4-45     |DONE      |Manifest: NOSIGNATURE
+		AdditionalEnchantedMiner-1.18.2-18.24.jar         |QuarryPlus                    |quarryplus                    |18.24               |DONE      |Manifest: NOSIGNATURE
+		starlight-1.0.2+forge.546ae87.jar                 |Starlight                     |starlight                     |1.0.2+forge.83663de |DONE      |Manifest: NOSIGNATURE
+		ferritecore-4.2.2-forge.jar                       |Ferrite Core                  |ferritecore                   |4.2.2               |DONE      |Manifest: 41:ce:50:66:d1:a0:05:ce:a1:0e:02:85:9b:46:64:e0:bf:2e:cf:60:30:9a:fe:0c:27:e0:63:66:9a:84:ce:8a
+		jei-1.18.2-forge-10.2.1.1005.jar                  |Just Enough Items             |jei                           |10.2.1.1005         |DONE      |Manifest: NOSIGNATURE
+		appliedenergistics2-forge-11.7.6.jar              |Applied Energistics 2         |ae2                           |11.7.6              |DONE      |Manifest: NOSIGNATURE
+		ImmersivePetroleum-1.18.2-4.2.0-25.jar            |Immersive Petroleum           |immersivepetroleum            |4.2.0-25            |DONE      |Manifest: NOSIGNATURE
+		forge-1.18.2-40.3.0-universal.jar                 |Forge                         |forge                         |40.3.0              |DONE      |Manifest: 84:ce:76:e8:45:35:e4:0e:63:86:df:47:59:80:0f:67:6c:c1:5f:6e:5f:4d:b3:54:47:1a:9f:7f:ed:5e:f2:90
+		noaddrepcost-1.18.2-1.0.jar                       |NoAddRepCost                  |noaddrepcost                  |1.18.2-1.0          |DONE      |Manifest: NOSIGNATURE
+		Patchouli-1.18.2-71.1.jar                         |Patchouli                     |patchouli                     |1.18.2-71.1         |DONE      |Manifest: NOSIGNATURE
+		Mantle-1.18.2-1.9.54.jar                          |Mantle                        |mantle                        |1.9.54              |DONE      |Manifest: NOSIGNATURE
+		ForgeEndertech-1.18.2-9.0.8.0-build.1586.jar      |ForgeEndertech                |forgeendertech                |9.0.8.0             |DONE      |Manifest: NOSIGNATURE
+		AdLods-1.18.2-6.0.5.0-build.1586.jar              |Large Ore Deposits            |adlods                        |6.0.5.0             |DONE      |Manifest: NOSIGNATURE
+		jeimultiblocks-1.18.2-0.0.2.jar                   |Just Enough Immersive Multiblo|jeimultiblocks                |0.0.2               |DONE      |Manifest: NOSIGNATURE
+		ImmersiveEngineering-1.18.2-8.4.0-161.jar         |Immersive Engineering         |immersiveengineering          |1.18.2-8.4.0-161    |DONE      |Manifest: 44:39:94:cf:1d:8c:be:3c:7f:a9:ee:f4:1e:63:a5:ac:61:f9:c2:87:d5:5b:d9:d6:8c:b5:3e:96:5d:8e:3f:b7
+		modernfix-forge-5.18.0+mc1.18.2.jar               |ModernFix                     |modernfix                     |5.18.0+mc1.18.2     |DONE      |Manifest: NOSIGNATURE
+		ZeroCore2-1.18.2-2.1.39.jar                       |Zero CORE 2                   |zerocore                      |1.18.2-2.1.39       |DONE      |Manifest: NOSIGNATURE
+		ExtremeReactors2-1.18.2-2.0.71.jar                |Extreme Reactors              |bigreactors                   |1.18.2-2.0.71       |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 73f5f94c-a6d3-4898-964d-4fbee8659bd2
+	FML: 40.3
+	Forge: net.minecraftforge:40.3.0
