@@ -1,46 +1,46 @@
-[09Jul2025 12:20:59.292] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 40.3.0, --fml.mcVersion, 1.18.2, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20220404.173914, --nogui]
-[09Jul2025 12:20:59.300] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 9.1.3+9.1.3+main.9b69c82a starting: java version 17.0.15 by Ubuntu
-[09Jul2025 12:20:59.499] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/opt/minecraftlatest/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2314!/ Service=ModLauncher Env=SERVER
-[09Jul2025 12:21:00.218] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /opt/minecraftlatest/libraries/net/minecraftforge/fmlcore/1.18.2-40.3.0/fmlcore-1.18.2-40.3.0.jar is missing mods.toml file
-[09Jul2025 12:21:00.219] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /opt/minecraftlatest/libraries/net/minecraftforge/javafmllanguage/1.18.2-40.3.0/javafmllanguage-1.18.2-40.3.0.jar is missing mods.toml file
-[09Jul2025 12:21:00.221] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /opt/minecraftlatest/libraries/net/minecraftforge/lowcodelanguage/1.18.2-40.3.0/lowcodelanguage-1.18.2-40.3.0.jar is missing mods.toml file
-[09Jul2025 12:21:00.224] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /opt/minecraftlatest/libraries/net/minecraftforge/mclanguage/1.18.2-40.3.0/mclanguage-1.18.2-40.3.0.jar is missing mods.toml file
-[09Jul2025 12:21:00.445] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
-[09Jul2025 12:21:02.987] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
-[09Jul2025 12:21:03.028] [main/ERROR] [mixin/]: Mixin config noaddrepcost.mixin.json does not specify "minVersion" property
-[09Jul2025 12:21:03.089] [main/INFO] [mixin/]: Successfully loaded Mixin Connector [ca.spottedleaf.starlight.mixin.MixinConnector]
-[09Jul2025 12:21:03.090] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments [--nogui]
-[09Jul2025 12:21:03.115] [main/INFO] [com.abdelaziz.saturn.common.Saturn/]: Loaded Saturn config file with 4 configurable options
-[09Jul2025 12:21:03.150] [main/INFO] [Canary/]: Loaded configuration file for Canary: 118 options available, 0 override(s) found
-[09Jul2025 12:21:03.243] [main/WARN] [mixin/]: Reference map 'mixins.noaddrepcost.refmap.json' for noaddrepcost.mixin.json could not be read. If this is a development environment you can ignore this message
-[09Jul2025 12:21:03.327] [main/INFO] [ModernFix/]: Loaded configuration file for ModernFix 5.18.0+mc1.18.2: 80 options available, 1 override(s) found
-[09Jul2025 12:21:03.328] [main/WARN] [ModernFix/]: Option 'mixin.bugfix.item_cache_flag' overriden (by mods [canary]) to 'false'
-[09Jul2025 12:21:03.329] [main/INFO] [ModernFix/]: Applying Nashorn fix
-[09Jul2025 12:21:03.347] [main/INFO] [ModernFix/]: Applied Forge config corruption patch
-[09Jul2025 12:21:04.847] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.3.2).
-[09Jul2025 12:21:05.439] [main/INFO] [net.minecraft.server.Bootstrap/]: ModernFix reached bootstrap stage (8.846 s after launch)
-[09Jul2025 12:21:05.704] [main/INFO] [ModernFix/]: Injecting BlockStateBase cache population hook into getNeighborPathNodeType from com.abdelaziz.canary.mixin.ai.pathing.BlockStateBaseMixin
-[09Jul2025 12:21:05.705] [main/INFO] [ModernFix/]: Injecting BlockStateBase cache population hook into getPathNodeType from com.abdelaziz.canary.mixin.ai.pathing.BlockStateBaseMixin
-[09Jul2025 12:21:05.705] [main/INFO] [ModernFix/]: Injecting BlockStateBase cache population hook into m_60823_ from com.abdelaziz.canary.mixin.block.flatten_states.BlockStateBaseMixin
-[09Jul2025 12:21:05.705] [main/INFO] [ModernFix/]: Injecting BlockStateBase cache population hook into getOpacityIfCached from ca.spottedleaf.starlight.mixin.common.blockstate.BlockStateBaseMixin
-[09Jul2025 12:21:05.705] [main/INFO] [ModernFix/]: Injecting BlockStateBase cache population hook into isConditionallyFullOpaque from ca.spottedleaf.starlight.mixin.common.blockstate.BlockStateBaseMixin
-[09Jul2025 12:21:06.297] [main/WARN] [mixin/]: Static binding violation: PRIVATE @Overwrite method m_47505_ in modernfix-common.mixins.json:perf.remove_biome_temperature_cache.BiomeMixin cannot reduce visibiliy of PUBLIC target method, visibility will be upgraded.
-[09Jul2025 12:21:06.299] [main/WARN] [mixin/]: Method overwrite conflict for m_47505_ in modernfix-common.mixins.json:perf.remove_biome_temperature_cache.BiomeMixin, previously written by com.abdelaziz.saturn.mixin.leaks.biome_temperature_cache.BiomeMixin. Skipping method.
-[09Jul2025 12:21:07.538] [main/INFO] [net.minecraft.server.Bootstrap/]: Vanilla bootstrap took 2093 milliseconds
-[09Jul2025 12:21:11.526] [modloading-worker-0/INFO] [de.srendi.noaddrepcost.NoAddRepCost/]: No additional repair cost for you <3
-[09Jul2025 12:21:11.538] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 40.3.0, for MC 1.18.2 with MCP 20220404.173914
-[09Jul2025 12:21:11.538] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v40.3.0 Initialized
-[09Jul2025 12:21:12.525] [modloading-worker-0/INFO] [pneumaticcraft/]: Thirdparty integration activated for [immersiveengineering,jei,patchouli]
-[09Jul2025 12:21:14.327] [main/INFO] [ModernFix/]: Bypassed Mojang DFU
-[09Jul2025 12:21:14.328] [main/INFO] [ModernFix/]: Instantiating Mojang DFU
-[09Jul2025 12:21:15.146] [main/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `milk`, expected `forge`. This could be a intended override, but in most cases indicates a broken mod.
-[09Jul2025 12:21:15.147] [main/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `flowing_milk`, expected `forge`. This could be a intended override, but in most cases indicates a broken mod.
-[09Jul2025 12:21:15.247] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:mob_effect: The object flaxbeard.immersivepetroleum.common.util.IPEffects$AntiFireEffect@575143fa has been registered twice for the same name immersivepetroleum:anti_fire.
-[09Jul2025 12:21:16.153] [modloading-worker-0/INFO] [pneumaticcraft/]: PneumaticCraft: Repressurized is loading!
-[09Jul2025 12:21:16.168] [Immersive Engineering Contributors Thread/INFO] [immersiveengineering/]: Attempting to download special revolvers from GitHub
-[09Jul2025 12:21:16.427] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [saturn] Starting version check at https://github.com/AbdElAziz333/Saturn/raw/mc1.20.1/dev/updates.json
-[09Jul2025 12:21:16.702] [modloading-worker-0/INFO] [pneumaticcraft/]: Sending IMC messages.
-[09Jul2025 12:21:16.857] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+[10Jul2025 22:08:14.224] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 40.3.0, --fml.mcVersion, 1.18.2, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20220404.173914, --nogui]
+[10Jul2025 22:08:14.230] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 9.1.3+9.1.3+main.9b69c82a starting: java version 17.0.15 by Ubuntu
+[10Jul2025 22:08:14.438] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/opt/minecraft/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2314!/ Service=ModLauncher Env=SERVER
+[10Jul2025 22:08:15.173] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /opt/minecraft/libraries/net/minecraftforge/fmlcore/1.18.2-40.3.0/fmlcore-1.18.2-40.3.0.jar is missing mods.toml file
+[10Jul2025 22:08:15.175] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /opt/minecraft/libraries/net/minecraftforge/javafmllanguage/1.18.2-40.3.0/javafmllanguage-1.18.2-40.3.0.jar is missing mods.toml file
+[10Jul2025 22:08:15.177] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /opt/minecraft/libraries/net/minecraftforge/lowcodelanguage/1.18.2-40.3.0/lowcodelanguage-1.18.2-40.3.0.jar is missing mods.toml file
+[10Jul2025 22:08:15.179] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /opt/minecraft/libraries/net/minecraftforge/mclanguage/1.18.2-40.3.0/mclanguage-1.18.2-40.3.0.jar is missing mods.toml file
+[10Jul2025 22:08:15.390] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[10Jul2025 22:08:18.033] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[10Jul2025 22:08:18.073] [main/ERROR] [mixin/]: Mixin config noaddrepcost.mixin.json does not specify "minVersion" property
+[10Jul2025 22:08:18.132] [main/INFO] [mixin/]: Successfully loaded Mixin Connector [ca.spottedleaf.starlight.mixin.MixinConnector]
+[10Jul2025 22:08:18.132] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments [--nogui]
+[10Jul2025 22:08:18.156] [main/INFO] [com.abdelaziz.saturn.common.Saturn/]: Loaded Saturn config file with 4 configurable options
+[10Jul2025 22:08:18.190] [main/INFO] [Canary/]: Loaded configuration file for Canary: 118 options available, 0 override(s) found
+[10Jul2025 22:08:18.271] [main/WARN] [mixin/]: Reference map 'mixins.noaddrepcost.refmap.json' for noaddrepcost.mixin.json could not be read. If this is a development environment you can ignore this message
+[10Jul2025 22:08:18.351] [main/INFO] [ModernFix/]: Loaded configuration file for ModernFix 5.18.0+mc1.18.2: 80 options available, 1 override(s) found
+[10Jul2025 22:08:18.352] [main/WARN] [ModernFix/]: Option 'mixin.bugfix.item_cache_flag' overriden (by mods [canary]) to 'false'
+[10Jul2025 22:08:18.353] [main/INFO] [ModernFix/]: Applying Nashorn fix
+[10Jul2025 22:08:18.370] [main/INFO] [ModernFix/]: Applied Forge config corruption patch
+[10Jul2025 22:08:19.762] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.3.2).
+[10Jul2025 22:08:20.295] [main/INFO] [net.minecraft.server.Bootstrap/]: ModernFix reached bootstrap stage (8.703 s after launch)
+[10Jul2025 22:08:20.554] [main/INFO] [ModernFix/]: Injecting BlockStateBase cache population hook into getNeighborPathNodeType from com.abdelaziz.canary.mixin.ai.pathing.BlockStateBaseMixin
+[10Jul2025 22:08:20.555] [main/INFO] [ModernFix/]: Injecting BlockStateBase cache population hook into getPathNodeType from com.abdelaziz.canary.mixin.ai.pathing.BlockStateBaseMixin
+[10Jul2025 22:08:20.555] [main/INFO] [ModernFix/]: Injecting BlockStateBase cache population hook into m_60823_ from com.abdelaziz.canary.mixin.block.flatten_states.BlockStateBaseMixin
+[10Jul2025 22:08:20.555] [main/INFO] [ModernFix/]: Injecting BlockStateBase cache population hook into getOpacityIfCached from ca.spottedleaf.starlight.mixin.common.blockstate.BlockStateBaseMixin
+[10Jul2025 22:08:20.555] [main/INFO] [ModernFix/]: Injecting BlockStateBase cache population hook into isConditionallyFullOpaque from ca.spottedleaf.starlight.mixin.common.blockstate.BlockStateBaseMixin
+[10Jul2025 22:08:21.127] [main/WARN] [mixin/]: Static binding violation: PRIVATE @Overwrite method m_47505_ in modernfix-common.mixins.json:perf.remove_biome_temperature_cache.BiomeMixin cannot reduce visibiliy of PUBLIC target method, visibility will be upgraded.
+[10Jul2025 22:08:21.129] [main/WARN] [mixin/]: Method overwrite conflict for m_47505_ in modernfix-common.mixins.json:perf.remove_biome_temperature_cache.BiomeMixin, previously written by com.abdelaziz.saturn.mixin.leaks.biome_temperature_cache.BiomeMixin. Skipping method.
+[10Jul2025 22:08:22.642] [main/INFO] [net.minecraft.server.Bootstrap/]: Vanilla bootstrap took 2342 milliseconds
+[10Jul2025 22:08:26.178] [modloading-worker-0/INFO] [de.srendi.noaddrepcost.NoAddRepCost/]: No additional repair cost for you <3
+[10Jul2025 22:08:26.191] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 40.3.0, for MC 1.18.2 with MCP 20220404.173914
+[10Jul2025 22:08:26.192] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v40.3.0 Initialized
+[10Jul2025 22:08:27.073] [modloading-worker-0/INFO] [pneumaticcraft/]: Thirdparty integration activated for [immersiveengineering,jei,patchouli]
+[10Jul2025 22:08:28.765] [main/INFO] [ModernFix/]: Bypassed Mojang DFU
+[10Jul2025 22:08:28.765] [main/INFO] [ModernFix/]: Instantiating Mojang DFU
+[10Jul2025 22:08:29.732] [main/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `milk`, expected `forge`. This could be a intended override, but in most cases indicates a broken mod.
+[10Jul2025 22:08:29.733] [main/INFO] [net.minecraftforge.registries.GameData/]: Potentially Dangerous alternative prefix `minecraft` for name `flowing_milk`, expected `forge`. This could be a intended override, but in most cases indicates a broken mod.
+[10Jul2025 22:08:29.851] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:mob_effect: The object flaxbeard.immersivepetroleum.common.util.IPEffects$AntiFireEffect@7fda569c has been registered twice for the same name immersivepetroleum:anti_fire.
+[10Jul2025 22:08:30.959] [modloading-worker-0/INFO] [pneumaticcraft/]: PneumaticCraft: Repressurized is loading!
+[10Jul2025 22:08:30.976] [Immersive Engineering Contributors Thread/INFO] [immersiveengineering/]: Attempting to download special revolvers from GitHub
+[10Jul2025 22:08:31.314] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [saturn] Starting version check at https://github.com/AbdElAziz333/Saturn/raw/mc1.20.1/dev/updates.json
+[10Jul2025 22:08:31.560] [modloading-worker-0/INFO] [pneumaticcraft/]: Sending IMC messages.
+[10Jul2025 22:08:32.024] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
 com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 9 column 1 path $
 	at com.google.gson.Gson.fromJson(Gson.java:975) ~[gson-2.8.9.jar%2323!/:?]
 	at com.google.gson.Gson.fromJson(Gson.java:928) ~[gson-2.8.9.jar%2323!/:?]
@@ -55,196 +55,177 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:145) ~[gson-2.8.9.jar%2323!/:?]
 	at com.google.gson.Gson.fromJson(Gson.java:963) ~[gson-2.8.9.jar%2323!/:?]
 	... 6 more
-[09Jul2025 12:21:16.860] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [canary] Starting version check at https://github.com/AbdElAziz333/Canary/raw/mc1.19.2/dev/updates.json
-[09Jul2025 12:21:16.926] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [canary] Found status: UP_TO_DATE Current: 0.3.3 Target: null
-[09Jul2025 12:21:16.927] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [pneumaticcraft] Starting version check at https://raw.githubusercontent.com/TeamPneumatic/pnc-repressurized/1.18.2/release_info.json
-[09Jul2025 12:21:16.939] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [pneumaticcraft] Found status: AHEAD Current: 1.18.2-3.6.4-45 Target: null
-[09Jul2025 12:21:16.940] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [quarryplus] Starting version check at https://version.kotori316.com/get-version/1.18.2/forge/quarryplus
-[09Jul2025 12:21:17.096] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [quarryplus] Found status: BETA Current: 18.24 Target: 18.24
-[09Jul2025 12:21:17.097] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
-[09Jul2025 12:21:17.349] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 40.3.0 Target: null
-[09Jul2025 12:21:17.350] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [immersiveengineering] Starting version check at https://raw.githubusercontent.com/BluSunrize/ImmersiveEngineering/1.18.2/changelog.json
-[09Jul2025 12:21:17.448] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [immersiveengineering] Found status: UP_TO_DATE Current: 1.18.2-8.4.0-161 Target: null
-[09Jul2025 12:21:17.450] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [zerocore] Starting version check at https://raw.githubusercontent.com/ZeroNoRyouki/ModUpdates/master/ZeroCore2.json
-[09Jul2025 12:21:17.477] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [zerocore] Found status: UP_TO_DATE Current: 1.18.2-2.1.39 Target: null
-[09Jul2025 12:21:17.477] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [bigreactors] Starting version check at https://raw.githubusercontent.com/ZeroNoRyouki/ModUpdates/master/ExtremeReactors2.json
-[09Jul2025 12:21:17.497] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [bigreactors] Found status: AHEAD Current: 1.18.2-2.0.71 Target: null
-[09Jul2025 12:21:17.643] [main/WARN] [net.minecraftforge.server.loading.ServerModLoader/LOADING]: Mods loaded with 2 warnings
-[09Jul2025 12:21:17.654] [main/WARN] [net.minecraftforge.server.loading.ServerModLoader/LOADING]: modernfix.no_lazydfu
-[09Jul2025 12:21:17.655] [main/WARN] [net.minecraftforge.server.loading.ServerModLoader/LOADING]: modernfix.perf_mod_warning
-[09Jul2025 12:21:17.716] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[09Jul2025 12:21:18.720] [main/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/opt/minecraftlatest/libraries/net/minecraft/server/1.18.2-20220404.173914/server-1.18.2-20220404.173914-srg.jar%2362!/assets/.mcassetsroot' uses unexpected schema
-[09Jul2025 12:21:18.722] [main/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/opt/minecraftlatest/libraries/net/minecraft/server/1.18.2-20220404.173914/server-1.18.2-20220404.173914-srg.jar%2362!/data/.mcassetsroot' uses unexpected schema
-[09Jul2025 12:21:24.499] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[09Jul2025 12:21:24.503] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[09Jul2025 12:21:24.512] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[09Jul2025 12:21:24.517] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[09Jul2025 12:21:24.520] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[09Jul2025 12:21:24.531] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [pncr, amadrone_deliver, toPos] and [pncr, amadrone_deliver, player] with inputs: [0 0 0]
-[09Jul2025 12:21:26.886] [Worker-Main-26/INFO] [pneumaticcraft/]: ignoring heat properties for block create:blaze_burner: mod not loaded
-[09Jul2025 12:21:26.907] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/create/blaze_burner_seething as it's serializer returned null
-[09Jul2025 12:21:27.079] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:pneumaticcraft_fuels/cofh_biofuel as it's serializer returned null
-[09Jul2025 12:21:27.086] [Worker-Main-26/INFO] [pneumaticcraft/]: ignoring heat properties for block byg:magmatic_stone: mod not loaded
-[09Jul2025 12:21:27.088] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/byg/magmatic_stone as it's serializer returned null
-[09Jul2025 12:21:27.094] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/passivefluidport_mekanism as it's serializer returned null
-[09Jul2025 12:21:27.097] [Worker-Main-26/INFO] [pneumaticcraft/]: ignoring heat properties for block natura:nether_heat_sand: mod not loaded
-[09Jul2025 12:21:27.098] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/natura/nether_heat_sand as it's serializer returned null
-[09Jul2025 12:21:27.153] [Worker-Main-26/INFO] [pneumaticcraft/]: ignoring heat properties for block valhelsia_structures:brazier: mod not loaded
-[09Jul2025 12:21:27.153] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/valhelsia_structures/brazier as it's serializer returned null
-[09Jul2025 12:21:27.160] [Worker-Main-26/INFO] [pneumaticcraft/]: ignoring heat properties for block create:blaze_burner: mod not loaded
-[09Jul2025 12:21:27.161] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/create/blaze_burner_smouldering as it's serializer returned null
-[09Jul2025 12:21:27.175] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:pneumaticcraft_fuels/hydrogen as it's serializer returned null
-[09Jul2025 12:21:27.236] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/fuelrod_alt_ingots_uranium as it's serializer returned null
-[09Jul2025 12:21:27.270] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/redstoneport_alt as it's serializer returned null
-[09Jul2025 12:21:27.283] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/computerport_alt as it's serializer returned null
-[09Jul2025 12:21:27.286] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/casing_upgrade_alt as it's serializer returned null
-[09Jul2025 12:21:27.308] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:turbine/reinforced/blade_alt as it's serializer returned null
-[09Jul2025 12:21:27.314] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:pneumaticcraft_fuels/ethylene as it's serializer returned null
-[09Jul2025 12:21:27.328] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:pneumaticcraft_fuels/cofh_refined_fuel as it's serializer returned null
-[09Jul2025 12:21:27.338] [Worker-Main-26/INFO] [pneumaticcraft/]: ignoring heat properties for block create:blaze_burner: mod not loaded
-[09Jul2025 12:21:27.339] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/create/blaze_burner_fading as it's serializer returned null
-[09Jul2025 12:21:27.342] [Worker-Main-26/INFO] [pneumaticcraft/]: ignoring heat properties for block mekanism:block_uranium: mod not loaded
-[09Jul2025 12:21:27.343] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/mekanism/uranium as it's serializer returned null
-[09Jul2025 12:21:27.350] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:turbine/reinforced/bearing_alt as it's serializer returned null
-[09Jul2025 12:21:27.359] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:turbine/reinforced/redstoneport_alt as it's serializer returned null
-[09Jul2025 12:21:27.371] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:pneumaticcraft_fuels/cofh_creosote as it's serializer returned null
-[09Jul2025 12:21:27.386] [Worker-Main-26/INFO] [pneumaticcraft/]: ignoring heat properties for block byg:cryptic_campfire: mod not loaded
-[09Jul2025 12:21:27.386] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/byg/cryptic_campfire as it's serializer returned null
-[09Jul2025 12:21:27.397] [Worker-Main-26/INFO] [pneumaticcraft/]: ignoring heat properties for block betterendforge:ancient_emerald_ice: mod not loaded
-[09Jul2025 12:21:27.398] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/betterendforge/ancient_emerald_ice as it's serializer returned null
-[09Jul2025 12:21:27.399] [Worker-Main-26/INFO] [pneumaticcraft/]: ignoring heat properties for block byg:boric_campfire: mod not loaded
-[09Jul2025 12:21:27.399] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/byg/boric_campfire as it's serializer returned null
-[09Jul2025 12:21:27.413] [Worker-Main-26/INFO] [pneumaticcraft/]: ignoring heat properties for block betterendforge:emerald_ice: mod not loaded
-[09Jul2025 12:21:27.414] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/betterendforge/emerald_ice as it's serializer returned null
-[09Jul2025 12:21:27.415] [Worker-Main-26/INFO] [pneumaticcraft/]: ignoring heat properties for block occultism:spirit_fire: mod not loaded
-[09Jul2025 12:21:27.416] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/occultism/spirit_fire as it's serializer returned null
-[09Jul2025 12:21:27.416] [Worker-Main-26/INFO] [pneumaticcraft/]: ignoring heat properties for block powah:dry_ice: mod not loaded
-[09Jul2025 12:21:27.416] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/powah/dry_ice as it's serializer returned null
-[09Jul2025 12:21:27.430] [Worker-Main-26/INFO] [pneumaticcraft/]: ignoring heat properties for block betterendforge:dense_emerald_ice: mod not loaded
-[09Jul2025 12:21:27.431] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/betterendforge/dense_emerald_ice as it's serializer returned null
-[09Jul2025 12:21:27.445] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:one_probe_crafting as it's serializer returned null
-[09Jul2025 12:21:27.450] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/fluidaccessport_alt as it's serializer returned null
-[09Jul2025 12:21:27.452] [Worker-Main-26/INFO] [pneumaticcraft/]: ignoring heat properties for block byg:cryptic_magma_block: mod not loaded
-[09Jul2025 12:21:27.452] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/byg/cryptic_magma as it's serializer returned null
-[09Jul2025 12:21:27.452] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:turbine/reinforced/shaft_alt as it's serializer returned null
-[09Jul2025 12:21:27.455] [Worker-Main-26/INFO] [pneumaticcraft/]: ignoring heat properties for block botania:blaze_block: mod not loaded
-[09Jul2025 12:21:27.456] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/botania/blaze_block as it's serializer returned null
-[09Jul2025 12:21:27.458] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/fuelrod_alt_ingots_yellorium as it's serializer returned null
-[09Jul2025 12:21:27.472] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:turbine/reinforced/casing_alt as it's serializer returned null
-[09Jul2025 12:21:27.494] [Worker-Main-26/INFO] [pneumaticcraft/]: ignoring heat properties for block create:blaze_burner: mod not loaded
-[09Jul2025 12:21:27.496] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/create/blaze_burner_kindled as it's serializer returned null
-[09Jul2025 12:21:27.498] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:turbine/reinforced/casing_upgrade_alt as it's serializer returned null
-[09Jul2025 12:21:27.501] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/controlrod_alt as it's serializer returned null
-[09Jul2025 12:21:27.519] [Worker-Main-26/INFO] [pneumaticcraft/]: ignoring heat properties for block quark:permafrost: mod not loaded
-[09Jul2025 12:21:27.520] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/quark/permafrost as it's serializer returned null
-[09Jul2025 12:21:27.521] [Worker-Main-26/INFO] [pneumaticcraft/]: ignoring heat properties for block decorative_blocks:brazier: mod not loaded
-[09Jul2025 12:21:27.522] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/decorative_blocks/brazier as it's serializer returned null
-[09Jul2025 12:21:27.524] [Worker-Main-26/INFO] [pneumaticcraft/]: ignoring heat properties for block quark:blaze_lantern: mod not loaded
-[09Jul2025 12:21:27.525] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/quark/blaze_lantern as it's serializer returned null
-[09Jul2025 12:21:27.527] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:turbine/reinforced/computerport_alt as it's serializer returned null
-[09Jul2025 12:21:27.532] [Worker-Main-26/INFO] [pneumaticcraft/]: ignoring heat properties for block decorative_blocks:soul_brazier: mod not loaded
-[09Jul2025 12:21:27.534] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/decorative_blocks/soul_brazier as it's serializer returned null
-[09Jul2025 12:21:27.537] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:radiation_shield_mekanism as it's serializer returned null
-[09Jul2025 12:21:27.545] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/casing_alt as it's serializer returned null
-[09Jul2025 12:21:27.552] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:pneumaticcraft_fuels/cofh_tree_oil as it's serializer returned null
-[09Jul2025 12:21:27.562] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:drone_interface as it's serializer returned null
-[09Jul2025 12:21:27.570] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/solidaccessport_alt as it's serializer returned null
-[09Jul2025 12:21:27.579] [Worker-Main-26/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 61 recipes
-[09Jul2025 12:21:29.160] [Worker-Main-26/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 3087 advancements
-[09Jul2025 12:21:29.252] [Worker-Main-26/INFO] [immersivepetroleum/]: Loading Distillation Recipes.
-[09Jul2025 12:21:29.260] [Worker-Main-26/INFO] [immersivepetroleum/]: Loading Reservoirs.
-[09Jul2025 12:21:29.280] [Worker-Main-26/INFO] [immersivepetroleum/]: Loading Coker-Unit Recipes.
-[09Jul2025 12:21:29.282] [Worker-Main-26/INFO] [immersivepetroleum/]: Loading High-Pressure Refinery Recipes.
-[09Jul2025 12:21:29.288] [Worker-Main-26/INFO] [slimeknights.mantle.fluid.transfer.FluidContainerTransferManager/]: Loaded 23 dynamic modifiers in 2.88409 ms
-[09Jul2025 12:21:29.496] [Worker-Main-26/INFO] [slimeknights.tconstruct.library.modifiers.ModifierManager/]: Loaded 94 dynamic modifiers and 17 modifier redirects in 188.0757 ms
-[09Jul2025 12:21:29.522] [Worker-Main-26/INFO] [slimeknights.tconstruct.library.modifiers.ModifierManager/]: Loaded 37 modifier tags for 126 modifiers in 25.957912 ms
-[09Jul2025 12:21:29.524] [Worker-Main-26/INFO] [slimeknights.tconstruct.library.modifiers.ModifierManager/]: Loaded 49 enchantment to modifier mappings in 1.90217 ms
-[09Jul2025 12:21:29.535] [Worker-Main-26/INFO] [slimeknights.tconstruct.library.modifiers.spilling.SpillingFluidManager/]: Loaded 49 spilling fluids in 10.228349 ms
-[09Jul2025 12:21:29.598] [Worker-Main-26/INFO] [slimeknights.tconstruct.library.materials.definition.MaterialManager/]: Loaded 56 materials in 33.678055 ms
-[09Jul2025 12:21:29.608] [Worker-Main-26/INFO] [slimeknights.tconstruct.library.materials.definition.MaterialManager/]: Loaded 1 material tags for 20 materials in 9.583289 ms
-[09Jul2025 12:21:29.689] [Worker-Main-26/INFO] [slimeknights.tconstruct.library.materials.stats.MaterialStatsManager/]: 196 stats loaded for 65 materials in 81.1449 ms
-[09Jul2025 12:21:29.736] [Worker-Main-26/INFO] [slimeknights.tconstruct.library.materials.traits.MaterialTraitsManager/]: 86 traits loaded for 65 materials in 45.788918 ms
-[09Jul2025 12:21:29.764] [Worker-Main-26/INFO] [slimeknights.tconstruct.library.tools.definition.ToolDefinitionLoader/]: Loaded 34 tool definitions in 27.76133 ms
-[09Jul2025 12:21:29.787] [Worker-Main-26/INFO] [slimeknights.tconstruct.library.tools.layout.StationSlotLayoutLoader/]: Loaded 18 station slot layouts in 22.334396 ms
-[09Jul2025 12:21:30.800] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.18.2
-[09Jul2025 12:21:30.801] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
-[09Jul2025 12:21:30.801] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
-[09Jul2025 12:21:30.802] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[09Jul2025 12:21:31.007] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
-[09Jul2025 12:21:31.064] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener/]: Using epoll channel type
-[09Jul2025 12:21:31.401] [Server thread/INFO] [immersivepetroleum/FuelHandler/]: Added immersivepetroleum:naphtha as Portable Generator Fuel. (256RF/t 9mB/t)
-[09Jul2025 12:21:31.402] [Server thread/INFO] [immersivepetroleum/FuelHandler/]: Added immersivepetroleum:gasoline as Portable Generator Fuel. (256RF/t 6mB/t)
-[09Jul2025 12:21:31.404] [Server thread/INFO] [immersivepetroleum/FuelHandler/]: Added immersivepetroleum:benzene as Portable Generator Fuel. (256RF/t 6mB/t)
-[09Jul2025 12:21:31.405] [Server thread/INFO] [immersivepetroleum/FuelHandler/]: Added immersivepetroleum:gasoline as Motorboat Fuel. (1 mB/t)
-[09Jul2025 12:21:31.406] [Server thread/INFO] [immersivepetroleum/FuelHandler/]: Added immersivepetroleum:naphtha as Motorboat Fuel. (2 mB/t)
-[09Jul2025 12:21:31.417] [Server thread/INFO] [immersivepetroleum/FuelHandler/]: Added immersivepetroleum:benzene as Motorboat Fuel. (2 mB/t)
-[09Jul2025 12:21:31.496] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
-[09Jul2025 12:21:33.362] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[09Jul2025 12:21:33.391] [Server thread/WARN] [mixin/]: Method overwrite conflict for removeIf in modernfix-common.mixins.json:bugfix.paper_chunk_patches.SortedArraySetMixin, previously written by com.abdelaziz.canary.mixin.world.chunk_tickets.SortedArraySetMixin. Skipping method.
-[09Jul2025 12:21:38.634] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[09Jul2025 12:21:38.635] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[09Jul2025 12:21:38.635] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[09Jul2025 12:21:38.636] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[09Jul2025 12:21:38.636] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[09Jul2025 12:21:38.636] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[09Jul2025 12:21:38.637] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[09Jul2025 12:21:38.637] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[09Jul2025 12:21:38.637] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[09Jul2025 12:21:38.638] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[09Jul2025 12:21:38.638] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[09Jul2025 12:21:38.902] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 6%
-[09Jul2025 12:21:39.365] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 55%
-[09Jul2025 12:21:39.786] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 6423 ms
-[09Jul2025 12:21:39.787] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (8.408s)! For help, type "help"
-[09Jul2025 12:21:39.823] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
-[09Jul2025 12:21:39.844] [Server thread/INFO] [patchouli/]: Sending reload packet to clients
-[09Jul2025 12:21:39.947] [Server thread/INFO] [immersiveengineering/]: Couldn't fully analyze 1 radiator, missing knowledge for {1 water_bucket=0.25}
-[09Jul2025 12:21:39.947] [Server thread/INFO] [immersiveengineering/]: Couldn't fully analyze 1 compressed_iron_helmet, missing knowledge for {1 leather_helmet=1.0}
-[09Jul2025 12:21:39.948] [Server thread/INFO] [immersiveengineering/]: Couldn't fully analyze 1 pneumatic_leggings, missing knowledge for {1 compressed_iron_leggings=1.0}
-[09Jul2025 12:21:39.948] [Server thread/INFO] [immersiveengineering/]: Couldn't fully analyze 1 compressed_iron_boots, missing knowledge for {1 leather_boots=1.0}
-[09Jul2025 12:21:39.948] [Server thread/INFO] [immersiveengineering/]: Couldn't fully analyze 1 compressed_iron_chestplate, missing knowledge for {1 leather_chestplate=1.0}
-[09Jul2025 12:21:39.949] [Server thread/INFO] [immersiveengineering/]: Couldn't fully analyze 1 compressed_iron_leggings, missing knowledge for {1 leather_leggings=1.0}
-[09Jul2025 12:21:39.949] [Server thread/INFO] [immersiveengineering/]: Finished recipe profiler for Arc Recycling, took 82 milliseconds
-[09Jul2025 12:21:39.952] [Server thread/WARN] [ModernFix/]: Dedicated server took 43.362 seconds to load
-[09Jul2025 12:22:07.057] [User Authenticator #1/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: UUID of player KermitDeToad is c8d0a0e4-9c0a-442f-b2fc-a6c8ee713daa
-[09Jul2025 12:22:08.484] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.server.PlayerAdvancements@32a82009
-[09Jul2025 12:22:08.526] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: KermitDeToad[/69.53.118.31:51906] logged in with entity id 78 at (-1699.5899279578734, 75.0, 2465.7643726718393)
-[09Jul2025 12:22:08.627] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: KermitDeToad joined the game
-[09Jul2025 12:22:08.727] [Netty Epoll Server IO #2/INFO] [immersiveengineering/]: Recipes for potions: minecraft:awkward, minecraft:fire_resistance, minecraft:invisibility, minecraft:long_turtle_master, minecraft:water_breathing, minecraft:slowness, minecraft:long_night_vision, minecraft:leaping, minecraft:long_slowness, minecraft:strong_slowness, minecraft:strong_swiftness, minecraft:strong_poison, minecraft:night_vision, minecraft:harming, minecraft:long_regeneration, minecraft:long_water_breathing, minecraft:strength, minecraft:long_strength, minecraft:water, minecraft:long_weakness, minecraft:long_leaping, minecraft:swiftness, minecraft:long_swiftness, minecraft:long_invisibility, minecraft:regeneration, minecraft:turtle_master, minecraft:strong_regeneration, minecraft:strong_strength, minecraft:slow_falling, minecraft:long_slow_falling, minecraft:healing, minecraft:long_fire_resistance, minecraft:strong_harming, minecraft:strong_turtle_master, minecraft:poison, minecraft:strong_leaping, minecraft:strong_healing, minecraft:weakness, minecraft:long_poison
-[09Jul2025 12:22:08.991] [Netty Epoll Server IO #2/ERROR] [net.minecraft.commands.synchronization.ArgumentTypes/]: Could not serialize SelectorArgument[allowedValues=[adv_pump, adv_quarry, book_mover, creative_generator, exp_module, exp_pump, filler, filler_module, flex_marker, frame, fuel_module_normal, marker, marker16, mini_quarry, mining_well, mover, placer_plus, pump_module, pump_plus, quarry, remote_placer, remove_bedrock_module, repeat_tick_module, replacer, replacer_module, solid_fuel_quarry, spawner_controller, status_checker, workbench, y_setter]] (class com.yogpc.qp.utils.ConfigCommand$SelectorArgument) - will not be sent to client!
-[09Jul2025 12:22:15.003] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 6599ms or 131 ticks behind
-[09Jul2025 12:23:13.702] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [KermitDeToad: Set own game mode to Creative Mode]
-[09Jul2025 12:23:39.294] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [KermitDeToad: Teleported KermitDeToad to -1795.500000, 82.131321, 2388.500000]
-[09Jul2025 12:23:46.190] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2186ms or 43 ticks behind
-[09Jul2025 12:23:58.936] [Worker-Main-25/WARN] [ModernFix/]: The namespace tconstruct contains an outdated structure file, which can cause worldgen lag. Please view debug.log for the full filename, determine which mod provides the structure, and report to the mod/datapack author, including the debug log.
-[09Jul2025 12:24:03.366] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2012ms or 40 ticks behind
-[09Jul2025 12:24:03.390] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [KermitDeToad: Set the time to 1000]
-[09Jul2025 12:24:05.294] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: KermitDeToad moved too quickly! -9.921203801712181,0.0,1.9510205216233771
-[09Jul2025 12:24:16.022] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: KermitDeToad moved too quickly! -10.05102464560241,0.0,0.6110718365616776
-[09Jul2025 12:24:19.424] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: KermitDeToad moved too quickly! -10.958523303222137,0.0,-0.43579799158987953
-[09Jul2025 12:24:40.968] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2114ms or 42 ticks behind
-[09Jul2025 12:24:51.218] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [KermitDeToad: Teleported KermitDeToad to -2323.500000, 141.375655, 2500.500000]
-[09Jul2025 12:24:51.232] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: KermitDeToad moved too quickly! -65.48449361686971,0.0,32.495866912872316
-[09Jul2025 12:24:51.257] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: KermitDeToad moved too quickly! -65.48449361686971,0.0,32.495866912872316
-[09Jul2025 12:25:09.004] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2100ms or 42 ticks behind
-[09Jul2025 12:25:27.937] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: KermitDeToad moved too quickly! 10.888116561722654,0.0,0.10121181791919298
-[09Jul2025 12:25:29.008] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 5004ms or 100 ticks behind
-[09Jul2025 12:25:34.499] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: KermitDeToad moved too quickly! 10.887892536408344,0.0,-0.012777698702848284
-[09Jul2025 12:25:42.013] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: KermitDeToad moved too quickly! 6.496266544397258,3.5487245810776358,-7.133731816260479
-[09Jul2025 12:25:48.970] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2016ms or 40 ticks behind
-[09Jul2025 12:26:03.066] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [KermitDeToad: Set own game mode to Survival Mode]
-[09Jul2025 12:26:04.266] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: KermitDeToad lost connection: Disconnected
-[09Jul2025 12:26:04.267] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: KermitDeToad left the game
-[09Jul2025 12:26:23.006] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Stopping the server
-[09Jul2025 12:26:23.057] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[09Jul2025 12:26:23.059] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[09Jul2025 12:26:23.059] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[09Jul2025 12:26:23.095] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[09Jul2025 12:27:06.660] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/ae2:spatial_storage
-[09Jul2025 12:27:06.662] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
-[09Jul2025 12:27:06.663] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
-[09Jul2025 12:27:06.730] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[09Jul2025 12:27:06.730] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (spatial_storage): All chunks are saved
-[09Jul2025 12:27:06.730] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[09Jul2025 12:27:06.731] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[09Jul2025 12:27:06.731] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[10Jul2025 22:08:32.073] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [canary] Starting version check at https://github.com/AbdElAziz333/Canary/raw/mc1.19.2/dev/updates.json
+[10Jul2025 22:08:32.212] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [canary] Found status: UP_TO_DATE Current: 0.3.3 Target: null
+[10Jul2025 22:08:32.212] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [pneumaticcraft] Starting version check at https://raw.githubusercontent.com/TeamPneumatic/pnc-repressurized/1.18.2/release_info.json
+[10Jul2025 22:08:32.248] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [pneumaticcraft] Found status: AHEAD Current: 1.18.2-3.6.4-45 Target: null
+[10Jul2025 22:08:32.249] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [quarryplus] Starting version check at https://version.kotori316.com/get-version/1.18.2/forge/quarryplus
+[10Jul2025 22:08:32.426] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [quarryplus] Found status: BETA Current: 18.24 Target: 18.24
+[10Jul2025 22:08:32.427] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[10Jul2025 22:08:32.617] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 40.3.0 Target: null
+[10Jul2025 22:08:32.618] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [immersiveengineering] Starting version check at https://raw.githubusercontent.com/BluSunrize/ImmersiveEngineering/1.18.2/changelog.json
+[10Jul2025 22:08:32.666] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [immersiveengineering] Found status: UP_TO_DATE Current: 1.18.2-8.4.0-161 Target: null
+[10Jul2025 22:08:32.667] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [zerocore] Starting version check at https://raw.githubusercontent.com/ZeroNoRyouki/ModUpdates/master/ZeroCore2.json
+[10Jul2025 22:08:32.696] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [zerocore] Found status: UP_TO_DATE Current: 1.18.2-2.1.39 Target: null
+[10Jul2025 22:08:32.697] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [bigreactors] Starting version check at https://raw.githubusercontent.com/ZeroNoRyouki/ModUpdates/master/ExtremeReactors2.json
+[10Jul2025 22:08:32.721] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [bigreactors] Found status: AHEAD Current: 1.18.2-2.0.71 Target: null
+[10Jul2025 22:08:32.904] [main/WARN] [net.minecraftforge.server.loading.ServerModLoader/LOADING]: Mods loaded with 2 warnings
+[10Jul2025 22:08:32.914] [main/WARN] [net.minecraftforge.server.loading.ServerModLoader/LOADING]: modernfix.no_lazydfu
+[10Jul2025 22:08:32.915] [main/WARN] [net.minecraftforge.server.loading.ServerModLoader/LOADING]: modernfix.perf_mod_warning
+[10Jul2025 22:08:33.017] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[10Jul2025 22:08:34.289] [main/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/opt/minecraft/libraries/net/minecraft/server/1.18.2-20220404.173914/server-1.18.2-20220404.173914-srg.jar%2362!/assets/.mcassetsroot' uses unexpected schema
+[10Jul2025 22:08:34.291] [main/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/opt/minecraft/libraries/net/minecraft/server/1.18.2-20220404.173914/server-1.18.2-20220404.173914-srg.jar%2362!/data/.mcassetsroot' uses unexpected schema
+[10Jul2025 22:08:40.115] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[10Jul2025 22:08:40.119] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[10Jul2025 22:08:40.132] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[10Jul2025 22:08:40.135] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[10Jul2025 22:08:40.138] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[10Jul2025 22:08:40.145] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [pncr, amadrone_deliver, toPos] and [pncr, amadrone_deliver, player] with inputs: [0 0 0]
+[10Jul2025 22:08:42.132] [Worker-Main-32/INFO] [pneumaticcraft/]: ignoring heat properties for block create:blaze_burner: mod not loaded
+[10Jul2025 22:08:42.133] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/create/blaze_burner_seething as it's serializer returned null
+[10Jul2025 22:08:42.268] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:pneumaticcraft_fuels/cofh_biofuel as it's serializer returned null
+[10Jul2025 22:08:42.272] [Worker-Main-32/INFO] [pneumaticcraft/]: ignoring heat properties for block byg:magmatic_stone: mod not loaded
+[10Jul2025 22:08:42.273] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/byg/magmatic_stone as it's serializer returned null
+[10Jul2025 22:08:42.285] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/passivefluidport_mekanism as it's serializer returned null
+[10Jul2025 22:08:42.313] [Worker-Main-32/INFO] [pneumaticcraft/]: ignoring heat properties for block natura:nether_heat_sand: mod not loaded
+[10Jul2025 22:08:42.314] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/natura/nether_heat_sand as it's serializer returned null
+[10Jul2025 22:08:42.374] [Worker-Main-32/INFO] [pneumaticcraft/]: ignoring heat properties for block valhelsia_structures:brazier: mod not loaded
+[10Jul2025 22:08:42.375] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/valhelsia_structures/brazier as it's serializer returned null
+[10Jul2025 22:08:42.382] [Worker-Main-32/INFO] [pneumaticcraft/]: ignoring heat properties for block create:blaze_burner: mod not loaded
+[10Jul2025 22:08:42.383] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/create/blaze_burner_smouldering as it's serializer returned null
+[10Jul2025 22:08:42.404] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:pneumaticcraft_fuels/hydrogen as it's serializer returned null
+[10Jul2025 22:08:42.472] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/fuelrod_alt_ingots_uranium as it's serializer returned null
+[10Jul2025 22:08:42.518] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/redstoneport_alt as it's serializer returned null
+[10Jul2025 22:08:42.563] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/computerport_alt as it's serializer returned null
+[10Jul2025 22:08:42.564] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/casing_upgrade_alt as it's serializer returned null
+[10Jul2025 22:08:42.604] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:turbine/reinforced/blade_alt as it's serializer returned null
+[10Jul2025 22:08:42.611] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:pneumaticcraft_fuels/ethylene as it's serializer returned null
+[10Jul2025 22:08:42.632] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:pneumaticcraft_fuels/cofh_refined_fuel as it's serializer returned null
+[10Jul2025 22:08:42.642] [Worker-Main-32/INFO] [pneumaticcraft/]: ignoring heat properties for block create:blaze_burner: mod not loaded
+[10Jul2025 22:08:42.642] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/create/blaze_burner_fading as it's serializer returned null
+[10Jul2025 22:08:42.645] [Worker-Main-32/INFO] [pneumaticcraft/]: ignoring heat properties for block mekanism:block_uranium: mod not loaded
+[10Jul2025 22:08:42.645] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/mekanism/uranium as it's serializer returned null
+[10Jul2025 22:08:42.652] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:turbine/reinforced/bearing_alt as it's serializer returned null
+[10Jul2025 22:08:42.670] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:turbine/reinforced/redstoneport_alt as it's serializer returned null
+[10Jul2025 22:08:42.679] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:pneumaticcraft_fuels/cofh_creosote as it's serializer returned null
+[10Jul2025 22:08:42.709] [Worker-Main-32/INFO] [pneumaticcraft/]: ignoring heat properties for block byg:cryptic_campfire: mod not loaded
+[10Jul2025 22:08:42.710] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/byg/cryptic_campfire as it's serializer returned null
+[10Jul2025 22:08:42.727] [Worker-Main-32/INFO] [pneumaticcraft/]: ignoring heat properties for block betterendforge:ancient_emerald_ice: mod not loaded
+[10Jul2025 22:08:42.727] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/betterendforge/ancient_emerald_ice as it's serializer returned null
+[10Jul2025 22:08:42.728] [Worker-Main-32/INFO] [pneumaticcraft/]: ignoring heat properties for block byg:boric_campfire: mod not loaded
+[10Jul2025 22:08:42.729] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/byg/boric_campfire as it's serializer returned null
+[10Jul2025 22:08:42.769] [Worker-Main-32/INFO] [pneumaticcraft/]: ignoring heat properties for block betterendforge:emerald_ice: mod not loaded
+[10Jul2025 22:08:42.770] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/betterendforge/emerald_ice as it's serializer returned null
+[10Jul2025 22:08:42.770] [Worker-Main-32/INFO] [pneumaticcraft/]: ignoring heat properties for block occultism:spirit_fire: mod not loaded
+[10Jul2025 22:08:42.770] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/occultism/spirit_fire as it's serializer returned null
+[10Jul2025 22:08:42.771] [Worker-Main-32/INFO] [pneumaticcraft/]: ignoring heat properties for block powah:dry_ice: mod not loaded
+[10Jul2025 22:08:42.771] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/powah/dry_ice as it's serializer returned null
+[10Jul2025 22:08:42.839] [Worker-Main-32/INFO] [pneumaticcraft/]: ignoring heat properties for block betterendforge:dense_emerald_ice: mod not loaded
+[10Jul2025 22:08:42.840] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/betterendforge/dense_emerald_ice as it's serializer returned null
+[10Jul2025 22:08:42.866] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:one_probe_crafting as it's serializer returned null
+[10Jul2025 22:08:42.871] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/fluidaccessport_alt as it's serializer returned null
+[10Jul2025 22:08:42.885] [Worker-Main-32/INFO] [pneumaticcraft/]: ignoring heat properties for block byg:cryptic_magma_block: mod not loaded
+[10Jul2025 22:08:42.886] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/byg/cryptic_magma as it's serializer returned null
+[10Jul2025 22:08:42.886] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:turbine/reinforced/shaft_alt as it's serializer returned null
+[10Jul2025 22:08:42.910] [Worker-Main-32/INFO] [pneumaticcraft/]: ignoring heat properties for block botania:blaze_block: mod not loaded
+[10Jul2025 22:08:42.910] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/botania/blaze_block as it's serializer returned null
+[10Jul2025 22:08:42.912] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/fuelrod_alt_ingots_yellorium as it's serializer returned null
+[10Jul2025 22:08:42.938] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:turbine/reinforced/casing_alt as it's serializer returned null
+[10Jul2025 22:08:42.968] [Worker-Main-32/INFO] [pneumaticcraft/]: ignoring heat properties for block create:blaze_burner: mod not loaded
+[10Jul2025 22:08:42.968] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/create/blaze_burner_kindled as it's serializer returned null
+[10Jul2025 22:08:42.969] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:turbine/reinforced/casing_upgrade_alt as it's serializer returned null
+[10Jul2025 22:08:42.971] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/controlrod_alt as it's serializer returned null
+[10Jul2025 22:08:42.991] [Worker-Main-32/INFO] [pneumaticcraft/]: ignoring heat properties for block quark:permafrost: mod not loaded
+[10Jul2025 22:08:42.992] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/quark/permafrost as it's serializer returned null
+[10Jul2025 22:08:42.992] [Worker-Main-32/INFO] [pneumaticcraft/]: ignoring heat properties for block decorative_blocks:brazier: mod not loaded
+[10Jul2025 22:08:42.992] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/decorative_blocks/brazier as it's serializer returned null
+[10Jul2025 22:08:42.993] [Worker-Main-32/INFO] [pneumaticcraft/]: ignoring heat properties for block quark:blaze_lantern: mod not loaded
+[10Jul2025 22:08:43.000] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/quark/blaze_lantern as it's serializer returned null
+[10Jul2025 22:08:43.001] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:turbine/reinforced/computerport_alt as it's serializer returned null
+[10Jul2025 22:08:43.007] [Worker-Main-32/INFO] [pneumaticcraft/]: ignoring heat properties for block decorative_blocks:soul_brazier: mod not loaded
+[10Jul2025 22:08:43.007] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:block_heat_properties/decorative_blocks/soul_brazier as it's serializer returned null
+[10Jul2025 22:08:43.010] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:radiation_shield_mekanism as it's serializer returned null
+[10Jul2025 22:08:43.015] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/casing_alt as it's serializer returned null
+[10Jul2025 22:08:43.025] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:pneumaticcraft_fuels/cofh_tree_oil as it's serializer returned null
+[10Jul2025 22:08:43.070] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe pneumaticcraft:drone_interface as it's serializer returned null
+[10Jul2025 22:08:43.077] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe bigreactors:reactor/reinforced/solidaccessport_alt as it's serializer returned null
+[10Jul2025 22:08:43.082] [Worker-Main-32/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 61 recipes
+[10Jul2025 22:08:44.302] [Worker-Main-32/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 3087 advancements
+[10Jul2025 22:08:44.312] [Worker-Main-32/INFO] [slimeknights.mantle.fluid.transfer.FluidContainerTransferManager/]: Loaded 23 dynamic modifiers in 2.318567 ms
+[10Jul2025 22:08:44.321] [Worker-Main-32/INFO] [immersivepetroleum/]: Loading Distillation Recipes.
+[10Jul2025 22:08:44.326] [Worker-Main-32/INFO] [immersivepetroleum/]: Loading Reservoirs.
+[10Jul2025 22:08:44.330] [Worker-Main-32/INFO] [immersivepetroleum/]: Loading Coker-Unit Recipes.
+[10Jul2025 22:08:44.332] [Worker-Main-32/INFO] [immersivepetroleum/]: Loading High-Pressure Refinery Recipes.
+[10Jul2025 22:08:44.524] [Worker-Main-32/INFO] [slimeknights.tconstruct.library.modifiers.ModifierManager/]: Loaded 94 dynamic modifiers and 17 modifier redirects in 174.10791 ms
+[10Jul2025 22:08:44.567] [Worker-Main-32/INFO] [slimeknights.tconstruct.library.modifiers.ModifierManager/]: Loaded 37 modifier tags for 126 modifiers in 43.476486 ms
+[10Jul2025 22:08:44.570] [Worker-Main-32/INFO] [slimeknights.tconstruct.library.modifiers.ModifierManager/]: Loaded 49 enchantment to modifier mappings in 3.091982 ms
+[10Jul2025 22:08:44.587] [Worker-Main-32/INFO] [slimeknights.tconstruct.library.modifiers.spilling.SpillingFluidManager/]: Loaded 49 spilling fluids in 15.295624 ms
+[10Jul2025 22:08:44.614] [Worker-Main-32/INFO] [slimeknights.tconstruct.library.materials.definition.MaterialManager/]: Loaded 56 materials in 25.613794 ms
+[10Jul2025 22:08:44.623] [Worker-Main-32/INFO] [slimeknights.tconstruct.library.materials.definition.MaterialManager/]: Loaded 1 material tags for 20 materials in 9.461799 ms
+[10Jul2025 22:08:44.674] [Worker-Main-32/INFO] [slimeknights.tconstruct.library.materials.stats.MaterialStatsManager/]: 196 stats loaded for 65 materials in 49.12466 ms
+[10Jul2025 22:08:44.708] [Worker-Main-32/INFO] [slimeknights.tconstruct.library.materials.traits.MaterialTraitsManager/]: 86 traits loaded for 65 materials in 33.128937 ms
+[10Jul2025 22:08:44.824] [Worker-Main-32/INFO] [slimeknights.tconstruct.library.tools.definition.ToolDefinitionLoader/]: Loaded 34 tool definitions in 22.09864 ms
+[10Jul2025 22:08:44.836] [Worker-Main-32/INFO] [slimeknights.tconstruct.library.tools.layout.StationSlotLayoutLoader/]: Loaded 18 station slot layouts in 11.5464 ms
+[10Jul2025 22:08:45.734] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.18.2
+[10Jul2025 22:08:45.735] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
+[10Jul2025 22:08:45.735] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
+[10Jul2025 22:08:45.735] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[10Jul2025 22:08:46.045] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
+[10Jul2025 22:08:46.116] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener/]: Using epoll channel type
+[10Jul2025 22:08:46.479] [Server thread/INFO] [immersivepetroleum/FuelHandler/]: Added immersivepetroleum:naphtha as Portable Generator Fuel. (256RF/t 9mB/t)
+[10Jul2025 22:08:46.480] [Server thread/INFO] [immersivepetroleum/FuelHandler/]: Added immersivepetroleum:gasoline as Portable Generator Fuel. (256RF/t 6mB/t)
+[10Jul2025 22:08:46.481] [Server thread/INFO] [immersivepetroleum/FuelHandler/]: Added immersivepetroleum:benzene as Portable Generator Fuel. (256RF/t 6mB/t)
+[10Jul2025 22:08:46.481] [Server thread/INFO] [immersivepetroleum/FuelHandler/]: Added immersivepetroleum:gasoline as Motorboat Fuel. (1 mB/t)
+[10Jul2025 22:08:46.482] [Server thread/INFO] [immersivepetroleum/FuelHandler/]: Added immersivepetroleum:naphtha as Motorboat Fuel. (2 mB/t)
+[10Jul2025 22:08:46.482] [Server thread/INFO] [immersivepetroleum/FuelHandler/]: Added immersivepetroleum:benzene as Motorboat Fuel. (2 mB/t)
+[10Jul2025 22:08:46.554] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
+[10Jul2025 22:08:46.761] [Thread-0/INFO] [ModernFix/]: Please use /mfsrc to reload any changed mod config files
+[10Jul2025 22:08:47.984] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[10Jul2025 22:08:47.998] [Server thread/WARN] [mixin/]: Method overwrite conflict for removeIf in modernfix-common.mixins.json:bugfix.paper_chunk_patches.SortedArraySetMixin, previously written by com.abdelaziz.canary.mixin.world.chunk_tickets.SortedArraySetMixin. Skipping method.
+[10Jul2025 22:08:52.635] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[10Jul2025 22:08:52.636] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[10Jul2025 22:08:52.637] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[10Jul2025 22:08:52.638] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[10Jul2025 22:08:52.638] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[10Jul2025 22:08:52.639] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[10Jul2025 22:08:52.639] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[10Jul2025 22:08:52.639] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[10Jul2025 22:08:52.641] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[10Jul2025 22:08:52.643] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[10Jul2025 22:08:53.011] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
+[10Jul2025 22:08:53.486] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 43%
+[10Jul2025 22:08:53.796] [Netty Epoll Server IO #1/INFO] [net.minecraftforge.server.ServerLifecycleHooks/SERVERHOOKS]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[10Jul2025 22:08:53.920] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 5935 ms
+[10Jul2025 22:08:53.921] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (7.467s)! For help, type "help"
+[10Jul2025 22:08:53.972] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[10Jul2025 22:08:53.993] [Server thread/INFO] [patchouli/]: Sending reload packet to clients
+[10Jul2025 22:08:54.079] [Server thread/INFO] [immersiveengineering/]: Couldn't fully analyze 1 compressed_iron_leggings, missing knowledge for {1 leather_leggings=1.0}
+[10Jul2025 22:08:54.080] [Server thread/INFO] [immersiveengineering/]: Couldn't fully analyze 1 radiator, missing knowledge for {1 water_bucket=0.25}
+[10Jul2025 22:08:54.081] [Server thread/INFO] [immersiveengineering/]: Couldn't fully analyze 1 compressed_iron_chestplate, missing knowledge for {1 leather_chestplate=1.0}
+[10Jul2025 22:08:54.081] [Server thread/INFO] [immersiveengineering/]: Couldn't fully analyze 1 compressed_iron_boots, missing knowledge for {1 leather_boots=1.0}
+[10Jul2025 22:08:54.081] [Server thread/INFO] [immersiveengineering/]: Couldn't fully analyze 1 compressed_iron_helmet, missing knowledge for {1 leather_helmet=1.0}
+[10Jul2025 22:08:54.082] [Server thread/INFO] [immersiveengineering/]: Couldn't fully analyze 1 pneumatic_leggings, missing knowledge for {1 compressed_iron_leggings=1.0}
+[10Jul2025 22:08:54.082] [Server thread/INFO] [immersiveengineering/]: Finished recipe profiler for Arc Recycling, took 80 milliseconds
+[10Jul2025 22:08:54.085] [Server thread/WARN] [ModernFix/]: Dedicated server took 42.494 seconds to load
+[10Jul2025 22:09:02.685] [User Authenticator #1/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: UUID of player KermitDeToad is c8d0a0e4-9c0a-442f-b2fc-a6c8ee713daa
+[10Jul2025 22:09:04.063] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.server.PlayerAdvancements@10d3486e
+[10Jul2025 22:09:04.103] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: KermitDeToad[/69.53.118.31:65056] logged in with entity id 78 at (-1633.6178241439306, 75.0, 2440.875648127064)
+[10Jul2025 22:09:04.196] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: KermitDeToad joined the game
+[10Jul2025 22:09:04.283] [Netty Epoll Server IO #3/INFO] [immersiveengineering/]: Recipes for potions: minecraft:harming, minecraft:strength, minecraft:invisibility, minecraft:long_water_breathing, minecraft:long_strength, minecraft:long_turtle_master, minecraft:poison, minecraft:leaping, minecraft:strong_harming, minecraft:long_night_vision, minecraft:long_regeneration, minecraft:weakness, minecraft:strong_healing, minecraft:night_vision, minecraft:strong_swiftness, minecraft:healing, minecraft:strong_leaping, minecraft:strong_strength, minecraft:long_poison, minecraft:strong_regeneration, minecraft:slow_falling, minecraft:strong_slowness, minecraft:long_slow_falling, minecraft:slowness, minecraft:turtle_master, minecraft:long_weakness, minecraft:long_swiftness, minecraft:swiftness, minecraft:regeneration, minecraft:water, minecraft:long_slowness, minecraft:long_invisibility, minecraft:long_leaping, minecraft:water_breathing, minecraft:strong_poison, minecraft:fire_resistance, minecraft:awkward, minecraft:long_fire_resistance, minecraft:strong_turtle_master
+[10Jul2025 22:09:04.593] [Netty Epoll Server IO #3/ERROR] [net.minecraft.commands.synchronization.ArgumentTypes/]: Could not serialize SelectorArgument[allowedValues=[adv_pump, adv_quarry, book_mover, creative_generator, exp_module, exp_pump, filler, filler_module, flex_marker, frame, fuel_module_normal, marker, marker16, mini_quarry, mining_well, mover, placer_plus, pump_module, pump_plus, quarry, remote_placer, remove_bedrock_module, repeat_tick_module, replacer, replacer_module, solid_fuel_quarry, spawner_controller, status_checker, workbench, y_setter]] (class com.yogpc.qp.utils.ConfigCommand$SelectorArgument) - will not be sent to client!
+[10Jul2025 22:09:08.240] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 4252ms or 85 ticks behind
+[10Jul2025 22:09:15.805] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: KermitDeToad lost connection: Disconnected
+[10Jul2025 22:09:15.807] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: KermitDeToad left the game
+[10Jul2025 22:09:20.096] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Stopping the server
+[10Jul2025 22:09:20.139] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[10Jul2025 22:09:20.140] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[10Jul2025 22:09:20.141] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[10Jul2025 22:09:20.233] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[10Jul2025 22:09:33.558] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[10Jul2025 22:09:33.561] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[10Jul2025 22:09:33.562] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/ae2:spatial_storage
+[10Jul2025 22:09:33.631] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[10Jul2025 22:09:33.631] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[10Jul2025 22:09:33.631] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[10Jul2025 22:09:33.632] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (spatial_storage): All chunks are saved
+[10Jul2025 22:09:33.632] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
